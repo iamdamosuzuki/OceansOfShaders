@@ -4,7 +4,8 @@ void main () {
     for (int n = 1; n < 3; n++){    // reduce n for simpler waves
         float i = float(n);
         st -= vec2(.7 / i * sin(i * st.y + time + .3 * i) + 1.8,1.4 / i * cos(st.x + time + 0.3 * i) + 2.6);
-        st = rotate(st, vec2(1.), 0.7*sin(time/6.));
+        st = rotate(st, vec2(0.3), 0.7*sin(time/6.));
+        //st = rotate(st, vec2(0.3), 0.7*sin(st.x/6.));  //uncomment to jumble it all up
     }
     
      //st /= vec2(0.01 / sin(st.y + time + 0.3) + 1.8, 0.2 / sin(st.x + time + 0.3) + 1.6);
