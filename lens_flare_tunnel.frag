@@ -1,5 +1,6 @@
 // http://www.pouet.net/prod.php?which=57245
 // Based on shader by 'Danilo Guanabara'
+// https://www.shadertoy.com/view/XsXXDn
 
 #define t time
 #define r resolution.xy
